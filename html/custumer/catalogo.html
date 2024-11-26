@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="../../css/custumer/catalogo.css">
+  <link rel="stylesheet" href="../../css/admin/catalogo.css">
+  <script src="../../js/catalogov2.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img class="logo" src="../../resource/images/logo-login-cecar.png" alt="logo">
+      <h1>CECAR</h1>
+    </div>
+    <div class="header-right">
+      <nav style="background-color: #1A1A19;">
+        <ul>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="prestamo.html">Prestamos y devolución</a></li>
+        </ul>
+      </nav>
+      <label for="">Usuario</label>
+      <input type="text">
+    </div>
+  </header>
+  <div class="main">
+    <section>
+      <h2>Catalogo</h2>
+      <div class="nav-buscador" id="catalogContainer" >
+        <input type="text" placeholder="Buscar por título, autor, ISBN...">
+        <button >Buscar</button>
+  
+        <label for="">Filtrar</label>
+        <select id="filter">
+          <option value="all">Todos</option>
+          <option value="title">Título</option>
+          <option value="author">Autor</option>
+          <option value="isbn">ISBN</option>
+        </select>
+        <table id="booksTable" border="1">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>ISBN</th>
+            <th>Año de Publicación</th>
+            <th>Editorial</th>
+            <th>Copias</th>
+            <th>Ubicación</th>
+            <th>Palabras Clave</th>
+            <th>Imagen</th>
+            <th>Prestar</th> <!-- Nueva columna para el botón -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se insertarán los libros -->
+        </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>Copyright ® 2024 BiblioCecar Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

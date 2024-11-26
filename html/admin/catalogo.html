@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="../../css/admin/catalogo.css">
+  <script src="../../js/mostrarcatalogo.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img class="logo" src="../../resource/images/logo-login-cecar.png" alt="logo">
+      <h1>CECAR</h1>
+    </div>
+    <div class="header-right">
+      <!-- Botón de cerrar sesión -->
+    </div>
+  </header>
+  <div class="main">
+    <nav>
+      <ul>
+        <li><a href="registrolibros.html">Registro de libros</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="prestamos.html">Prestamos y devolución</a></li>
+      <li><a href="">Estadísticas y reportes</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Buscar</h2>
+      <div class="nav-buscador">
+        <input type="text" id="searchInput" placeholder="Buscar por título, autor, ISBN...">
+        <button id="searchButton">Buscar</button>
+        <select id="filter">
+          <option value="all">Todos</option>
+          <option value="title">Título</option>
+          <option value="author">Autor</option>
+          <option value="isbn">ISBN</option>
+        </select>
+      </div>
+    <table id="booksTable" border="1">
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>ISBN</th>
+      <th>Año de Publicación</th>
+      <th>Editorial</th>
+      <th>Copias</th>
+      <th>Ubicación</th>
+      <th>Palabras Clave</th>
+      <th>Imagen</th>
+      <th>Acciones</th> <!-- Columna para los botones CRUD -->
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Aquí se insertarán los libros -->
+  </tbody>
+</table>
+    </section>
+    
+  </div>
+  <footer>
+    <p>Copyright ® 2024 BiblioCecar Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registro de libros</title>
+  <link rel="stylesheet" href="../../css/admin/catalogo.css">
+  <script src="../../js/registrolibro.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img class="logo" src="../../resource/images/logo-login-cecar.png" alt="logo">
+      <h1>CECAR</h1>
+    </div>
+    <div class="header-right">
+      <label for="">Usuario</label>
+      <input type="text">
+    </div>
+  </header>
+  <div class="main">
+    <nav>
+      <ul>
+        <li><a href="registrolibros.html">Registro de libros</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="prestamos.html">Prestamos y devolución</a></li>
+      <li><a href="">Estadísticas y reportes</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Registro de Libros</h2>
+      <form id="registerBookForm" enctype="multipart/form-data">
+        <div>
+          <div class="div-row">
+            <label for="titulo">Título:</label>
+            <input type="text" id="title" required>
+            
+            <label for="autor">Autor:</label>
+            <input type="text" id="author" required>
+            
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" required>
+          </div>
+      
+          <div class="div-row">
+            <label for="publicacion">Año de Publicación:</label>
+            <input type="date" id="publicationYear" required>
+            
+            <label for="editorial">Editorial:</label>
+            <input type="text" id="editorial" required>
+            
+            <label for="ejemplares">Ejemplares:</label>
+            <input type="number" id="copies" required>
+          </div>
+      
+          <div class="div-row">
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="libraryLocation" required>
+            
+            <label for="palabrasClave">Palabras clave:</label>
+            <input type="text" id="keywords">
+          </div>
+        </div>
+    
+        <div class="div-row">
+          <label for="resumen">Resumen:</label>
+          <textarea id="summary" rows="5" required></textarea>
+        </div>
+    
+        <div>
+          <label for="bookImage">Cargar Imagen del Libro:</label>
+          <input type="file" id="bookImage" accept="image/*" required>
+        </div>
+    
+        <button type="submit">Registrar Libro</button>
+      </form>
+    </section>   
+  </div>
+  <footer>
+    <p>Copyright ® 2024 BiblioCecar Todos los derechos reservados.</p>
+  </footer>
+
+  <style>
+    input[type="text"], input[type="date"], input[type="number"], input[type="file"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      width: 150px;
+      background-color: #31511E;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+  </style>
+</body>
+</html>
